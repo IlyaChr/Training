@@ -1,4 +1,4 @@
-package com.ilyachr;
+package com.ilyachr.binarysearch;
 
 public class BinarySearch {
 

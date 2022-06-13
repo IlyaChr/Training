@@ -1,5 +1,6 @@
-package com.ilyachr;
+package com.ilyachr.binarysearch;
 
+import com.ilyachr.binarysearch.BinarySearch;
 import org.junit.jupiter.api.Test;
 
 import java.util.stream.IntStream;

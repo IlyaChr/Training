@@ -1,4 +1,4 @@
-package com.ilyachr;
+package com.ilyachr.badversion;
 
 import com.ilyachr.badversion.BadVersion;
 import org.junit.jupiter.api.Test;
