@@ -2,6 +2,9 @@ package com.ilyachr.badversion;
 
 import java.util.function.Predicate;
 
+/**
+ * 278. First Bad Version
+ */
 public class BadVersion extends VersionControl {
 
     public int firstBadVersion(int n) {

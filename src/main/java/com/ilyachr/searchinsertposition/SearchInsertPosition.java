@@ -1,5 +1,9 @@
 package com.ilyachr.searchinsertposition;
 
+
+/**
+ * 35. Search Insert Position
+ */
 public class SearchInsertPosition {
 
 
