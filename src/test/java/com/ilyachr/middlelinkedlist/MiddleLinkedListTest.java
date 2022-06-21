@@ -1,10 +1,9 @@
 package com.ilyachr.middlelinkedlist;
 
-import com.ilyachr.middlelinkedlist.MiddleLinkedList;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MiddleLinkedListTest {
 
@@ -25,7 +24,7 @@ class MiddleLinkedListTest {
         node_3.next = node_4;
         node_4.next = node_5;
 
-        assertEquals(node_3,middleLinkedList.middleNode(node_1));
+        assertEquals(node_3, middleLinkedList.middleNode(node_1));
 
     }
 
@@ -48,7 +47,7 @@ class MiddleLinkedListTest {
         node_4.next = node_5;
         node_5.next = node_6;
 
-        assertEquals(node_4,middleLinkedList.middleNode(node_1));
+        assertEquals(node_4, middleLinkedList.middleNode(node_1));
 
     }
 }
