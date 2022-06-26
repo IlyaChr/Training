@@ -75,7 +75,6 @@ class RemoveNthNodeFromEndListTest {
         RemoveNthNodeFromEndList.ListNode node_1 = new RemoveNthNodeFromEndList.ListNode(1);
         RemoveNthNodeFromEndList.ListNode node_2 = new RemoveNthNodeFromEndList.ListNode(2);
         //RemoveNthNodeFromEndList.ListNode node_3 = new RemoveNthNodeFromEndList.ListNode(3);
-
         node_1.next = node_2;
         //node_2.next = node_3;
 
