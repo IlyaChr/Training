@@ -9,32 +9,9 @@ import java.util.Map;
  */
 public class PermutationString {
 
-    /*public boolean checkInclusion(String s1, String s2) {
-
-        char temp;
-        StringBuilder stringBuilder;
-
-        if (s2.contains(s1)){
-            return true;
-        }
-
-        for (int i = 0; i < s1.length(); i++) {
-            stringBuilder = new StringBuilder(s1);
-            for (int j = 0; j < s1.length(); j++) {
-                if (i != j){
-                    temp = s1.charAt(i);
-                    stringBuilder.setCharAt(i,s1.charAt(j));
-                    stringBuilder.setCharAt(j,temp);
-                    if (s2.contains(stringBuilder)){
-                        return true;
-                    }
-                }
-            }
-        }
-        return false;
-    }*/
-
     public boolean checkInclusion(String s1, String s2) {
+
+        Map<String, Integer> s1WordCounter = getWordCounter(s1);
 
         for (int i = 0; i < s1.length(); i++) {
             char symbol = s1.charAt(i);
@@ -43,7 +20,7 @@ public class PermutationString {
 
             while ((index = s2.indexOf(symbol, index)) != -1) {
                 if (index + s1.length() <= s2.length()) {
-                    boolean isAnagram = isAnagram(s2.substring(index, index + s1.length()), s1);
+                    boolean isAnagram = isAnagram(s2.substring(index, index + s1.length()), s1, s1WordCounter);
                     if (isAnagram) {
                         return true;
                     }
@@ -55,8 +32,8 @@ public class PermutationString {
         return false;
     }
 
-    public boolean isAnagram(String s1, String s2) {
-        return s1.equals(s2) || getWordCounter(s1).equals(getWordCounter(s2));
+    public boolean isAnagram(String s2, String s1, Map<String, Integer> s1WordCounter) {
+        return s1.equals(s2) || getWordCounter(s2).equals(s1WordCounter);
     }
 
     private Map<String, Integer> getWordCounter(String str) {
@@ -69,6 +46,5 @@ public class PermutationString {
         }
         return map;
     }
-
 
 }
