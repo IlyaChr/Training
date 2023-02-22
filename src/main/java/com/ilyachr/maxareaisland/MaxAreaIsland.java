@@ -1,4 +1,4 @@
-package maxareaisland;
+package com.ilyachr.maxareaisland;
 
 /**
  * 695. Max Area of Island
