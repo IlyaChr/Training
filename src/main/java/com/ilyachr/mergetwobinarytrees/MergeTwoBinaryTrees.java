@@ -1,10 +1,6 @@
 package com.ilyachr.mergetwobinarytrees;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * 617. Merge Two Binary Trees
